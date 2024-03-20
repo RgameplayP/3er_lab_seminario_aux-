@@ -1,0 +1,44 @@
+Averigua acerca de las denominadas
+
+
+1) arrow functions
+
+Conocidas tambien como funciones flecha proporciona una sintaxis más concisa para definir 
+funciones en JavaScript. Se llaman "arrow functions" debido a la sintaxis de la flecha => 
+que es similar a una flecha.
+
+Ejemplo:
+
+function suma(a, b) {
+  return a + b;
+}
+
+//arrow functions
+const sumaArrow = (a, b) => a + b;
+
+
+
+2) callbacks 
+
+Son funciones que se pasan como argumentos a otras funciones y se ejecutan después de que se haya 
+completado una operación asincrónica o después de que se haya producido un evento. Son ampliamente utilizados 
+en JavaScript para manejar la asincronía y la programación basada en eventos.
+
+Ejemplo:
+
+// Función que toma un callback
+function operacionAsincronica(callback) {
+  // Simular una operación asincrónica
+  setTimeout(() => {
+    // Llamar al callback después de completar la operación
+    callback();
+  }, 1000);
+}
+
+// Función de callback
+function miCallback() {
+  console.log("La operación asincrónica ha sido completada.");
+}
+
+// Llamar a la función que toma el callback
+operacionAsincronica(miCallback);

@@ -1,0 +1,85 @@
+Funcionamiento del archivo:
+
+
+1) .gitignore
+
+Se utiliza para especificar los archivos y directorios que Git debe ignorar al realizar operaciones como agregar
+comprometer o fusionar cambios. Esto es útil para evitar que archivos temporales, archivos de compilación o archivos 
+de configuración específicos de la máquina se incluyan en el repositorio Git
+
+Pero es mejor explicarlo con un ejemplo para poder entender la teoria:
+
+Ejemplo:
+
+Hipoteticamente podemos decir que al desarrollar un proyecto web y queremos ignorar todos los archivos dentro del directorio node_modules
+así como los archivos .env que contienen información confidencial, entonces en} nuestro archivo .gitignore, agregaríamos las siguientes líneas:
+
+--------------------------------------------------------------------------
+-                         node_modules/                                  -                   
+-                           env                                          -              
+-                                                                        -
+-                                                                        -
+-                                                                        -
+-                                                                        -
+--------------------------------------------------------------------------
+
+2) .package.json
+
+Este archivo se puede definir como un archivo de metadatos para un proyecto Node.js. Contiene información sobre el proyecto, como el nombre
+la versión, las dependencias del proyecto y los scripts de automatización
+
+Pero es mejor explicarlo con un ejemplo para poder entender la teoria:
+
+Ejemplo:
+
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "description": "Una breve descripción de mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.0"
+  }
+}
+
+2) OTRO ARCHIVO:              style.css
+
+Este es un archivo estilo de "hojas" en cascada este se utiliza para definir el aspecto visual y el diseño de un sitio web o una aplicación web
+
+Pero es mejor explicarlo con un ejemplo para poder entender la teoria:
+
+Ejemplo:
+
+
+body {
+
+  /* Establece el margen de la página completa a 0 para eliminar el espacio predeterminado */
+  margin: 0;
+
+  /* Establece el modelo de caja a 'flex' para permitir un diseño flexible */
+  display: flex;
+
+  /* Centra verticalmente los elementos secundarios dentro del contenedor principal */
+  place-items: center;
+
+  /* Establece el ancho mínimo del cuerpo a 320 píxeles para garantizar una visualización mínima */
+  min-width: 320px;
+
+  /* Establece la altura mínima del cuerpo al 100% de la altura visible del dispositivo */
+  min-height: 100vh;
+}
+
+
+h1 {
+
+  /* Establece el tamaño de fuente del encabezado h1 a 3.2 veces el tamaño predeterminado */
+  font-size: 3.2em;
+  
+  /* Establece el espaciado entre líneas a 1.1 para un mejor ajuste del texto */
+  line-height: 1.1;
+}
